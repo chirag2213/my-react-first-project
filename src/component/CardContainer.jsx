@@ -85,8 +85,8 @@ const CardContainer = () => {
         <div className='flex justify-between my-2'>
           <h1 className='text-4xl font-bold'>What's on your mind?</h1>
           <div className='flex text-4xl gap-3'>
-            {/* <i className="fa-regular fa-circle-left text-gray-400" onClick={(e) => moveLeft(e)}></i>
-            <i className="fa-regular fa-circle-right" onClick={(e) => moveRight(e)}></i> */}
+            <i className="fa-regular fa-circle-left text-gray-300" onClick={(e) => moveLeft(e)}></i>
+            <i className="fa-regular fa-circle-right" onClick={(e) => moveRight(e)}></i>
           </div>
         </div>
 
@@ -113,15 +113,16 @@ const CardContainer = () => {
       
         <Searchbar searchText = {searchText} setSearchText = {setSearchText} masterList = {masterList} updateRestaurantList = {updateRestaurantList} />
 
-        <div className='mx-5 my-5'>
-        {/* <button className="bg-gray-300 hover:bg-gray-400 border border-black  h-full p-2" onClick={resetRestaurantList}>Show All</button> */}
-        </div>
+        {/* <div className='mx-5 my-5'>
+        <button className="bg-gray-300 hover:bg-gray-400 border border-black  h-full p-2" onClick={resetRestaurantList}>Show All</button>
+        </div> */}
 
         <div className='mx-5 my-5  w-1/3 flex justify-between gap-2'>
           {/* <h2 className='text-2xl underline underline-offset-[0.5rem]'>Filters: </h2> */}
-          <button className="bg-gray-300 hover:bg-gray-500 border border-black rounded h-full p-2" onClick={handleRatting}>TOP RATED</button>
-          <button className="bg-gray-300 hover:bg-gray-500 border border-black rounded h-full p-2" onClick={handleVeg}>Pure Veg</button>
-          <button className="bg-gray-300 hover:bg-gray-500 border border-black rounded h-full p-2" onClick={handleBuget}>Buget friendly</button>
+          <button className="bg-gray-300 hover:bg-gray-400 border border-black rounded h-full p-2" onClick={resetRestaurantList}>Show All</button>
+          <button className="bg-gray-300 hover:bg-gray-400 border border-black rounded h-full p-2" onClick={handleRatting}>TOP RATED</button>
+          <button className="bg-gray-300 hover:bg-gray-400 border border-black rounded h-full p-2" onClick={handleVeg}>Pure Veg</button>
+          <button className="bg-gray-300 hover:bg-gray-400 border border-black rounded h-full p-2" onClick={handleBuget}>Buget friendly</button>
         </div>
 
       </div>
